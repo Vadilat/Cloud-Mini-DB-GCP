@@ -17,13 +17,21 @@ This app exposes a simple RESTful interface for variable manipulation, including
 | `/end`                | Cleans the database (removes all data)  |
 | `/list`               | Lists all variables and their values    |
 
-**Example Response:**
-```json
-{
-  "a": "10",
-  "b": "20",
-  "c": "30"
-}
+### Dependencies
+
+All required packages are listed in `requirements.txt`. To install them locally:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Make sure your `app.yaml` includes your Google Cloud project ID:
+
+```yaml
+env_variables:
+  GOOGLE_CLOUD_PROJECT: your-project-name
 ```
 ### Testing
 
@@ -33,12 +41,4 @@ To run it locally:
 
 ```bash
 python test_app.py
-```
-
-### Dependencies
-
-All required packages are listed in `requirements.txt`. To install them locally:
-
-```bash
-pip install -r requirements.txt
 ```
