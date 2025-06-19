@@ -1,16 +1,13 @@
-# FastSimo
+# Cloud Mini-DB (GCP)
+A lightweight in-memory key-value store with support for undo/redo, deployed on Google App Engine and backed by Google Cloud Datastore.
+This app exposes a simple RESTful interface for variable manipulation, including value tracking, deletion, rollback, and more — perfect for demonstrating stateful logic on a stateless platform.
 
-## Live App
-**Live App URL**: https://fastsimon-455407.ew.r.appspot.com/
 
-## Task I: Hello World
-This app was successfully deployed to Google App Engine with a basic “Hello, World!”. 
-Response available at the root route (`/`).
-
-## Task II: Variable Commands Example:
+## Variable Commands Example:
 
 | Route                 | Description                             |
 |-----------------------|-----------------------------------------|
+| `/`                   | Returns “Hello, World!”                 |
 | `/set?name=x&value=5` | Sets `x = 5`                            |
 | `/get?name=x`         | Returns value of `x`, or `None`         |
 | `/unset?name=x`       | Deletes variable `x`                    |
