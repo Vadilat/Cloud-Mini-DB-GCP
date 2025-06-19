@@ -5,7 +5,7 @@ entrypoint: gunicorn -b :$PORT main:app
 instance_class: F1
 
 env_variables:
-  GOOGLE_CLOUD_PROJECT: fastsimon-455407
+  GOOGLE_CLOUD_PROJECT: your-project-name
 
 handlers:
   - url: /.*
